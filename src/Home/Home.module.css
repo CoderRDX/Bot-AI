@@ -1,0 +1,138 @@
+.main{
+    display: flex;
+    min-height: 100vh; 
+}
+.sidepanel{
+   
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.sidepanel button{
+    margin: 10px;
+}
+.sidepanelNav{
+    width: 208px;
+    height: 47px;
+    background:var(--primary-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+ 
+}
+.sidepanelNav button{
+    background: var(--primary-bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+.img1{
+    border-radius: 10px;
+}
+.img3{
+    border-radius: 50%;
+    padding: 10px;
+}
+.h201{
+    color: #9785BA;
+    margin: 10px;
+}
+.greet{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.btn{
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: var(--primary-bg-color);
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.chatpanel{
+    flex: 1;
+    background: linear-gradient(to right,  #D7C7F4, #9785BA );
+
+}
+.messageArea{
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+
+}
+
+
+.message {
+margin-bottom: 15px;
+display: flex;
+}
+
+.messageContent{
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.messageBox{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 105px;
+    border-radius: 20px;
+    border: 1px solid #9785BA;
+}
+  
+.message.bot .messageContent {
+    
+    background-color: #9785BA;
+    color: #ffffff;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.message.user .messageContent {
+    background-color: #e4e6eb;
+    color: #000000;
+    border-radius: 15px 15px 15px 0px;
+}
+  
+.inputContainer{
+    display: flex;
+    padding: 10px;
+}
+.inputContainer input{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: non
+}
+
+
+@media(max-width:767px){
+
+    .sidepanel{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        z-index: 1000;
+        width: 208px;
+      }
+
+    .chatpanel{
+        flex: 1;
+        width: 100%;
+      }
+
+}
